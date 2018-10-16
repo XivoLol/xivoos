@@ -349,7 +349,7 @@ function play(guild, song) {
 
 
 client.on('message', message => {
-    if (message.content === '-help') {
+    if (message.content === 'Bhelp') {
         let helpEmbed = new Discord.RichEmbed()
         .setTitle('**أوامر الميوزك...**')
         .setDescription('**برفكس البوت (B)**')
