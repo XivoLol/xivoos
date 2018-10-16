@@ -18,7 +18,7 @@ const fs = require('fs');
 
 const client = new Discord.Client({disableEveryone: true});
 
-const prefix = "-";
+const prefix = "B";
 /////////////////////////
 ////////////////////////
 
@@ -42,7 +42,7 @@ client.on('message', async msg =>{
     }
 });
 
-const adminprefix = "-";
+const adminprefix = "B";
 const devs = ['490076609215201282','336614900329611264'];
 client.on('message', message => {//for dev
   var argresult = message.content.split(` `).slice(1).join(' ');
@@ -352,15 +352,15 @@ client.on('message', message => {
     if (message.content === '-help') {
         let helpEmbed = new Discord.RichEmbed()
         .setTitle('**أوامر الميوزك...**')
-        .setDescription('**برفكس البوت (-)**')
-        .addField('-play', 'لتشغيل اغنية')
-        .addField('-join', 'دخول رومك الصوتي')
-        .addField('-disconnect', 'الخروج من رومك الصوتي')
-        .addField('-skip', 'تخطي الأغنية')
-        .addField('-pause', 'ايقاف الاغنية مؤقتا')
-        .addField('-resume', 'تكملة الاغنية')
-        .addField('-queue', 'اظهار قائمة التشغيل')
-        .addField('-np', 'اظهار الاغنية اللي انت مشغلها حاليا')
+        .setDescription('**برفكس البوت (B)**')
+        .addField('Bplay', 'لتشغيل اغنية')
+        .addField('Bjoin', 'دخول رومك الصوتي')
+        .addField('Bdisconnect', 'الخروج من رومك الصوتي')
+        .addField('Bskip', 'تخطي الأغنية')
+        .addField('Bpause', 'ايقاف الاغنية مؤقتا')
+        .addField('Bresume', 'تكملة الاغنية')
+        .addField('Bqueue', 'اظهار قائمة التشغيل')
+        .addField('Bnp', 'اظهار الاغنية اللي انت مشغلها حاليا')
       message.channel.send(helpEmbed);
     }
 });
